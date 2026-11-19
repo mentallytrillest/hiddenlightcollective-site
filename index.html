@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hidden Light Collective | Creativity, mental health &amp; AI-powered content</title>
+<meta name="description" content="Hidden Light Collective is Melissa Miller's umbrella brand, where creativity, mental health, and AI-powered content meet. Creative services, digital products, Wigglewink, poetry, CTRL+ALT+HEAL, and animal advocacy.">
+<meta name="theme-color" content="#111111">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hidden Light Collective">
+<meta property="og:description" content="An umbrella brand where creativity, mental health, and AI-powered content meet. Founded by Melissa Miller.">
+<meta property="og:url" content="https://mentallytrillest.github.io/hiddenlightcollective-site/">
+<meta property="og:site_name" content="Hidden Light Collective">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hidden Light Collective">
+<meta name="twitter:description" content="An umbrella brand where creativity, mental health, and AI-powered content meet. Founded by Melissa Miller.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23FF3EA5'/%3E%3Cpath d='M32 8c2 13 9 20 22 22-13 2-20 9-22 22-2-13-9-20-22-22 13-2 20-9 22-22z' fill='%23C6FF3D' stroke='%23111' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lobster&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#FF3EA5;--lime:#C6FF3D;--lilac:#C9A7FF;--cobalt:#2B4BFF;--cream:#FFF6E9;--ink:#111;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--ink);color:var(--ink);line-height:1.6;font-size:17px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 6px var(--lime)}
+.skip{position:absolute;left:-999px;top:8px;z-index:100;background:var(--lime);color:var(--ink);padding:10px 16px;border-radius:999px;font-weight:800}
+.skip:focus{left:16px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px;position:relative;z-index:2}
+section{position:relative;overflow:hidden;padding:84px 0}
+.bg-cobalt{background:var(--cobalt);color:var(--cream)}
+.bg-cream{background:var(--cream)}
+.bg-lilac{background:var(--lilac)}
+.bg-lime{background:var(--lime)}
+.bg-pink{background:var(--pink)}
+.bg-ink{background:var(--ink);color:var(--cream)}
+.display{font-family:"Archivo Black",Impact,sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:-.01em;font-weight:400}
+.h-xl{font-size:clamp(3rem,13vw,8.2rem)}
+.h-lg{font-size:clamp(2.3rem,8.5vw,5rem)}
+.h-md{font-size:clamp(1.6rem,5vw,2.6rem)}
+.echo-pink{color:var(--pink);text-shadow:.06em .06em 0 var(--cobalt)}
+.echo-cobalt{color:var(--cobalt);text-shadow:.06em .06em 0 var(--pink)}
+.echo-lime{color:var(--lime);text-shadow:.06em .06em 0 var(--ink)}
+.echo-cream{color:var(--cream);text-shadow:.06em .06em 0 var(--ink)}
+.echo-ink{color:var(--ink);text-shadow:.05em .05em 0 var(--cream)}
+.script{font-family:Lobster,cursive;text-transform:none;font-weight:400;letter-spacing:0;display:inline-block;transform:rotate(-4deg)}
+.lede{max-width:600px;font-size:1.08rem;font-weight:500;margin-top:18px}
+.head{margin-bottom:38px;position:relative}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{display:inline-block;font-weight:800;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:6px 13px;border-radius:999px;border:2px solid var(--ink);background:var(--cream);color:var(--ink);line-height:1.2}
+.pill.pk{background:var(--pink)} .pill.lm{background:var(--lime)} .pill.lc{background:var(--lilac)} .pill.cb{background:var(--cobalt);color:var(--cream)} .pill.bk{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.btn{display:inline-block;font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:.95rem;letter-spacing:.02em;text-decoration:none;padding:15px 26px;border:3px solid var(--ink);border-radius:999px;background:var(--lime);color:var(--ink);box-shadow:5px 5px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--ink)}
+.btn.pk{background:var(--pink)} .btn.cr{background:var(--cream)} .btn.lc{background:var(--lilac)}
+.btns{display:flex;flex-wrap:wrap;gap:16px;margin-top:30px}
+.card{position:relative;background:var(--cream);color:var(--ink);border:3px solid var(--ink);border-radius:22px;padding:28px 24px;box-shadow:9px 9px 0 var(--pink)}
+.card.sh-cobalt{box-shadow:9px 9px 0 var(--cobalt)} .card.sh-lilac{box-shadow:9px 9px 0 var(--lilac)} .card.sh-ink{box-shadow:9px 9px 0 var(--ink)} .card.sh-lime{box-shadow:9px 9px 0 var(--lime)}
+.card.f-lime{background:var(--lime)} .card.f-lilac{background:var(--lilac)} .card.f-pink{background:var(--pink)} .card.f-cobalt{background:var(--cobalt);color:var(--cream);border-color:var(--ink)}
+.grid{display:grid;gap:30px}
+@media(min-width:700px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.g3{grid-template-columns:repeat(3,1fr)}}
+.tilt-l{transform:rotate(-1.4deg)} .tilt-r{transform:rotate(1.2deg)}
+@media(max-width:699px){.tilt-l,.tilt-r{transform:none}}
+.blob{position:absolute;z-index:0;border-radius:46% 54% 60% 40%/50% 42% 58% 50%;pointer-events:none}
+.spark{position:absolute;z-index:1;width:34px;height:34px;pointer-events:none}
+.tape{position:absolute;top:-16px;left:50%;width:96px;height:28px;transform:translateX(-50%) rotate(-4deg);background:rgba(198,255,61,.85);border-left:2px dashed rgba(0,0,0,.15);border-right:2px dashed rgba(0,0,0,.15);z-index:3}
+.tape.pk{background:rgba(255,62,165,.75)} .tape.cr{background:rgba(235,225,205,.92)} .tape.lc{background:rgba(201,167,255,.9)}
+.sticker{position:absolute;z-index:4;width:112px;height:112px;display:grid;place-items:center;transform:rotate(12deg);filter:drop-shadow(4px 4px 0 var(--ink))}
+.sticker svg{position:absolute;inset:0;width:100%;height:100%}
+.sticker b{position:relative;font-family:"Archivo Black",sans-serif;font-weight:400;font-size:.86rem;line-height:1;text-align:center;text-transform:uppercase;color:var(--ink)}
+.sk-lime{color:var(--lime)} .sk-pink{color:var(--pink)} .sk-lilac{color:var(--lilac)} .sk-cream{color:var(--cream)}
+@media(max-width:600px){.sticker{width:86px;height:86px}.sticker b{font-size:.68rem}}
+nav{position:sticky;top:0;z-index:50;background:var(--ink);color:var(--cream);border-bottom:3px solid var(--pink)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.brand{font-family:"Archivo Black",sans-serif;text-transform:uppercase;text-decoration:none;font-size:.95rem;letter-spacing:.02em;line-height:1.1}
+.brand span{color:var(--lime)}
+nav ul{display:none;list-style:none;gap:22px}
+nav ul a{text-decoration:none;font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em}
+nav ul a:hover{color:var(--lime)}
+.nav-cta{padding:8px 16px;font-size:.78rem;box-shadow:3px 3px 0 var(--pink);border-color:var(--cream);flex:none}
+@media(min-width:860px){nav ul{display:flex}}
+.hero{position:relative;overflow:hidden;background:#0d0b14;color:var(--cream);padding:70px 0 60px}
+.glow{position:absolute;border-radius:50%;pointer-events:none;z-index:0;filter:blur(10px)}
+.hero .g1{width:620px;height:620px;background:radial-gradient(circle,rgba(255,62,165,.55),transparent 62%);top:-260px;right:-160px}
+.hero .g2{width:560px;height:560px;background:radial-gradient(circle,rgba(43,75,255,.6),transparent 62%);bottom:-260px;left:-200px}
+.hero .g3{width:340px;height:340px;background:radial-gradient(circle,rgba(201,167,255,.4),transparent 62%);top:30%;left:38%}
+.hero-grid{display:grid;gap:48px;align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.2fr .9fr}}
+.hero .kicker{display:flex;align-items:center;gap:10px;font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px var(--lime)}
+.hero h1{margin:6px 0 10px;line-height:1}
+.hello{display:block;font-family:Lobster,cursive;font-weight:400;font-size:clamp(2.2rem,6.5vw,3.8rem);color:var(--lime);text-shadow:0 0 18px rgba(198,255,61,.55);transform:rotate(-4deg);transform-origin:left;margin-bottom:-.08em;position:relative;z-index:2}
+.name{display:block;font-size:clamp(3.4rem,16vw,8.4rem);background:linear-gradient(95deg,#FF3EA5 0%,#C9A7FF 52%,#4f6bff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 22px rgba(255,62,165,.45)) drop-shadow(0 0 40px rgba(43,75,255,.35))}
+.col-script{display:block;font-family:Lobster,cursive;font-weight:400;font-size:clamp(2.4rem,8vw,4.6rem);color:var(--cream);text-shadow:0 0 18px rgba(255,246,233,.35);transform:rotate(-3deg);transform-origin:left;margin-top:.06em}
+.hero p.sub{max-width:540px;font-size:1.12rem;font-weight:500;color:rgba(255,246,233,.9);margin:22px 0 6px}
+.hero p.sub em{font-family:Lobster,cursive;font-style:normal;color:var(--pink);font-size:1.25em}
+.ghostbtn{background:rgba(255,255,255,.06);color:var(--cream);border-color:var(--cream);box-shadow:5px 5px 0 var(--pink)}
+.ghostbtn:hover{box-shadow:7px 7px 0 var(--pink)}
+.aster{position:absolute;z-index:1;font-size:3rem;line-height:1;font-weight:900;pointer-events:none}
+@media(max-width:700px){.hero .aster,.hero .spark{display:none}}
+.glow-lime{color:var(--lime);text-shadow:0 0 18px rgba(198,255,61,.6)}
+.collage{position:relative;height:460px;max-width:440px;margin:0 auto;width:100%}
+.chip{position:absolute;border:3px solid var(--ink);border-radius:18px;padding:14px 16px;box-shadow:6px 6px 0 var(--ink);font-family:"Archivo Black",sans-serif;text-transform:uppercase;line-height:1.05;font-size:1.05rem;color:var(--ink)}
+.chip small{display:block;font-family:Inter,sans-serif;font-weight:800;font-size:.65rem;letter-spacing:.08em;margin-bottom:4px;opacity:.85}
+.chip.c1{background:var(--lime);top:10px;left:8%;transform:rotate(-6deg);z-index:3}
+.chip.c2{background:var(--pink);top:68px;right:10px;transform:rotate(7deg);z-index:4}
+.chip.c3{background:var(--lilac);top:175px;left:8px;transform:rotate(-3deg);z-index:2}
+.chip.c4{background:var(--cream);top:220px;right:16px;transform:rotate(4deg);z-index:5}
+.chip.c5{background:var(--cobalt);color:var(--cream);bottom:86px;left:8px;transform:rotate(-5deg);z-index:3}
+.chip.c6{background:var(--lime);bottom:16px;right:10px;transform:rotate(6deg);z-index:4}
+@media(max-width:899px){.collage{height:400px;max-width:340px}.chip{font-size:.9rem;padding:12px 14px}.chip.c2{right:4px}.chip.c4{right:8px;top:210px}.chip.c5{bottom:78px}.chip.c6{bottom:10px;right:4px}}
+section,.hero{scroll-margin-top:72px}
+.banner{background:var(--lime);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);padding:18px 0}
+.ban-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 14px}
+.ban-label{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:.85rem}
+.tool{font-weight:800;font-size:.85rem;background:var(--cream);border:2px solid var(--ink);border-radius:999px;padding:5px 14px;box-shadow:3px 3px 0 var(--ink)}
+.venture{display:flex;flex-direction:column;min-height:100%}
+.venture h3{font-family:"Archivo Black",sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(1.35rem,2.6vw,1.7rem);line-height:1.05;margin:12px 0 10px}
+.venture p{font-size:.98rem;font-weight:500;margin-bottom:16px}
+.venture .btns,.venture .btn{margin-top:auto}
+.venture .pills{margin-bottom:16px}
+.prod-list{display:grid;gap:10px;margin:0 0 16px}
+.prod-item{background:rgba(255,246,233,.7);border:2px solid var(--ink);border-radius:14px;padding:12px 14px}
+.card.f-lime .prod-item{background:rgba(255,246,233,.55)}
+.prod-item strong{display:block;font-family:"Archivo Black",sans-serif;font-weight:400;text-transform:uppercase;font-size:.95rem;line-height:1.15;margin-bottom:4px}
+.prod-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.soon{font-weight:800;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;border:2px dashed var(--ink);border-radius:999px;padding:4px 10px}
+.price-tag{font-weight:800;font-size:.85rem}
+.note-line{font-size:.9rem;font-weight:600;margin-top:8px}
+.card.f-cobalt .pill{border-color:var(--ink)}
+.card.f-cobalt .soon{border-color:var(--cream);color:var(--cream)}
+.disclaimer{font-size:.88rem;font-weight:600;margin-top:4px}
+.about-grid{display:grid;gap:44px;align-items:center}
+@media(min-width:880px){.about-grid{grid-template-columns:.8fr 1.2fr}}
+.portrait{position:relative;max-width:300px;width:100%;margin:0 auto;aspect-ratio:4/5;border:3px solid var(--ink);border-radius:26px;background:linear-gradient(160deg,var(--lilac),var(--pink));box-shadow:12px 12px 0 var(--cobalt);transform:rotate(-3deg);display:grid;place-items:end center;overflow:visible}
+.portrait .sticker{top:-34px;right:-26px}
+.portrait .sil{width:80%;justify-self:center;align-self:end;border-radius:0 0 24px 24px}
+.phcap{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:var(--ink);color:var(--cream);padding:5px 12px;border-radius:999px;white-space:nowrap}
+.about-copy p{font-size:1.02rem;margin-bottom:14px;max-width:620px}
+.facts{display:grid;gap:16px;margin-top:26px}
+@media(min-width:600px){.facts{grid-template-columns:1fr 1fr}}
+.fact{padding:16px 18px;border-radius:14px;box-shadow:5px 5px 0 var(--pink)}
+.fact h3{font-family:"Archivo Black",sans-serif;font-weight:400;text-transform:uppercase;font-size:.95rem;margin:0 0 4px}
+.fact p{font-size:.9rem;margin:0}
+.contact .card{max-width:640px;box-shadow:10px 10px 0 var(--ink);background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.contact .row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,246,233,.15)}
+.contact .row:last-of-type{border-bottom:0}
+.contact .row a{font-weight:700;font-size:1.05rem;word-break:break-all}
+.contact .sticker{right:6%;top:40px}
+@media(max-width:700px){.contact .sticker{top:24px;right:10px}}
+.cta-band{background:#0d0b14;color:var(--cream);padding:70px 0;border-top:3px solid var(--lime)}
+.cta-inner{display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between}
+.cta-inner p{margin-top:12px;max-width:520px;font-weight:500;opacity:.9}
+footer{background:var(--ink);color:var(--cream);text-align:center;padding:26px 16px;font-weight:700;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase}
+footer span{color:var(--lime)}
+footer a{color:var(--cream);text-decoration:none}
+footer a:hover{color:var(--lime)}
+@media(max-width:560px){section{padding:66px 0}.card{padding:24px 20px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="scallop" viewBox="0 0 100 100"><path d="M100.00,50.00 L98.80,51.60 L95.90,53.01 L92.96,54.23 L91.64,55.48 L92.59,57.03 L95.12,58.97 L97.55,61.09 L98.30,62.94 L96.73,64.17 L93.56,64.79 L90.40,65.21 L88.80,66.07 L89.32,67.82 L91.26,70.35 L93.06,73.02 L93.30,75.00 L91.47,75.78 L88.25,75.56 L85.09,75.15 L83.32,75.57 L83.37,77.39 L84.58,80.33 L85.64,83.38 L85.36,85.36 L83.38,85.64 L80.33,84.58 L77.39,83.37 L75.57,83.32 L75.15,85.09 L75.56,88.25 L75.78,91.47 L75.00,93.30 L73.02,93.06 L70.35,91.26 L67.82,89.32 L66.07,88.80 L65.21,90.40 L64.79,93.56 L64.17,96.73 L62.94,98.30 L61.09,97.55 L58.97,95.12 L57.03,92.59 L55.48,91.64 L54.23,92.96 L53.01,95.90 L51.60,98.80 L50.00,100.00 L48.40,98.80 L46.99,95.90 L45.77,92.96 L44.52,91.64 L42.97,92.59 L41.03,95.12 L38.91,97.55 L37.06,98.30 L35.83,96.73 L35.21,93.56 L34.79,90.40 L33.93,88.80 L32.18,89.32 L29.65,91.26 L26.98,93.06 L25.00,93.30 L24.22,91.47 L24.44,88.25 L24.85,85.09 L24.43,83.32 L22.61,83.37 L19.67,84.58 L16.62,85.64 L14.64,85.36 L14.36,83.38 L15.42,80.33 L16.63,77.39 L16.68,75.57 L14.91,75.15 L11.75,75.56 L8.53,75.78 L6.70,75.00 L6.94,73.02 L8.74,70.35 L10.68,67.82 L11.20,66.07 L9.60,65.21 L6.44,64.79 L3.27,64.17 L1.70,62.94 L2.45,61.09 L4.88,58.97 L7.41,57.03 L8.36,55.48 L7.04,54.23 L4.10,53.01 L1.20,51.60 L0.00,50.00 L1.20,48.40 L4.10,46.99 L7.04,45.77 L8.36,44.52 L7.41,42.97 L4.88,41.03 L2.45,38.91 L1.70,37.06 L3.27,35.83 L6.44,35.21 L9.60,34.79 L11.20,33.93 L10.68,32.18 L8.74,29.65 L6.94,26.98 L6.70,25.00 L8.53,24.22 L11.75,24.44 L14.91,24.85 L16.68,24.43 L16.63,22.61 L15.42,19.67 L14.36,16.62 L14.64,14.64 L16.62,14.36 L19.67,15.42 L22.61,16.63 L24.43,16.68 L24.85,14.91 L24.44,11.75 L24.22,8.53 L25.00,6.70 L26.98,6.94 L29.65,8.74 L32.18,10.68 L33.93,11.20 L34.79,9.60 L35.21,6.44 L35.83,3.27 L37.06,1.70 L38.91,2.45 L41.03,4.88 L42.97,7.41 L44.52,8.36 L45.77,7.04 L46.99,4.10 L48.40,1.20 L50.00,0.00 L51.60,1.20 L53.01,4.10 L54.23,7.04 L55.48,8.36 L57.03,7.41 L58.97,4.88 L61.09,2.45 L62.94,1.70 L64.17,3.27 L64.79,6.44 L65.21,9.60 L66.07,11.20 L67.82,10.68 L70.35,8.74 L73.02,6.94 L75.00,6.70 L75.78,8.53 L75.56,11.75 L75.15,14.91 L75.57,16.68 L77.39,16.63 L80.33,15.42 L83.38,14.36 L85.36,14.64 L85.64,16.62 L84.58,19.67 L83.37,22.61 L83.32,24.43 L85.09,24.85 L88.25,24.44 L91.47,24.22 L93.30,25.00 L93.06,26.98 L91.26,29.65 L89.32,32.18 L88.80,33.93 L90.40,34.79 L93.56,35.21 L96.73,35.83 L98.30,37.06 L97.55,38.91 L95.12,41.03 L92.59,42.97 L91.64,44.52 L92.96,45.77 L95.90,46.99 L98.80,48.40Z" fill="currentColor" stroke="#111" stroke-width="2.5"/></symbol>
+  <symbol id="sp" viewBox="0 0 64 64"><path d="M32 2c2.6 16 13.4 27.4 30 30-16.6 2.6-27.4 14-30 30-2.6-16-13.4-27.4-30-30 16.6-2.6 27.4-14 30-30z" fill="currentColor"/></symbol>
+</svg>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">Hidden Light <span>Collective</span></a>
+    <ul>
+      <li><a href="#ventures">Ventures</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn nav-cta" href="https://work.hiddenlightcollective.com">Hire me</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div>
+  <span class="aster" style="top:96px;left:6%;color:var(--lime)" aria-hidden="true">✱</span>
+  <svg class="spark" style="color:var(--lilac);top:70px;left:52%;width:26px;height:26px" aria-hidden="true"><use href="#sp"/></svg>
+  <svg class="spark" style="color:var(--pink);bottom:90px;left:42%;width:20px;height:20px" aria-hidden="true"><use href="#sp"/></svg>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker"><span class="dot"></span>Founded by Melissa Miller</p>
+      <h1>
+        <span class="hello">Welcome to</span>
+        <span class="display name">Hidden<br>Light</span>
+        <span class="col-script">Collective</span>
+      </h1>
+      <p class="sub">An umbrella brand where <em>creativity</em>, mental health, and AI-powered content meet.</p>
+      <div class="btns">
+        <a class="btn" href="#ventures">See the ventures</a>
+        <a class="btn ghostbtn" href="https://work.hiddenlightcollective.com">Hire me</a>
+      </div>
+    </div>
+    <div class="collage" aria-hidden="true">
+      <div class="chip c1"><small>01</small>Services</div>
+      <div class="chip c2"><small>02</small>Digital products</div>
+      <div class="chip c3"><small>03</small>Wigglewink</div>
+      <div class="chip c4"><small>04</small>Poetry &amp; music</div>
+      <div class="chip c5"><small>05</small>CTRL+ALT+HEAL</div>
+      <div class="chip c6"><small>06</small>Animal advocacy</div>
+      <span class="sticker sk-lime" style="top:-10px;right:30px;width:96px;height:96px"><svg><use href="#scallop"/></svg><b>HLC</b></span>
+    </div>
+  </div>
+</header>
+
+<div class="banner" aria-label="What this brand is about">
+  <div class="wrap ban-row">
+    <span class="ban-label">The through-line ✱</span>
+    <span class="tool">Creativity</span>
+    <span class="tool">Mental health</span>
+    <span class="tool">AI-powered content</span>
+  </div>
+</div>
+
+<main id="main">
+<section class="bg-cream" id="ventures">
+  <div class="blob" style="width:320px;height:300px;background:var(--lilac);top:-130px;right:-100px"></div>
+  <div class="blob" style="width:240px;height:220px;background:var(--pink);bottom:-90px;left:-80px"></div>
+  <svg class="spark" style="color:var(--cobalt);top:70px;right:16%" aria-hidden="true"><use href="#sp"/></svg>
+  <div class="wrap">
+    <div class="head">
+      <span class="pill cb">The collective</span>
+      <h2 class="display h-lg" style="margin-top:16px">What's under<br>this <span class="script echo-pink">umbrella</span></h2>
+      <p class="lede">Six homes for the work Melissa is building. Each one stands on its own, and they all belong here.</p>
+    </div>
+    <div class="grid g3">
+      <article class="card venture sh-pink tilt-l">
+        <div class="tape" aria-hidden="true"></div>
+        <span class="pill pk">01 · Services</span>
+        <h3>Creative &amp; Digital Services</h3>
+        <p>Websites, copywriting, UGC, social, and AI-powered content for wellness brands, creators, and small businesses.</p>
+        <div class="pills">
+          <span class="pill">Websites</span>
+          <span class="pill">Copywriting</span>
+          <span class="pill">UGC</span>
+          <span class="pill">Social</span>
+          <span class="pill">AI content</span>
+        </div>
+        <a class="btn pk" href="https://work.hiddenlightcollective.com">Hire me</a>
+      </article>
+
+      <article class="card venture f-lime sh-cobalt">
+        <span class="pill bk">02 · Shop</span>
+        <h3>Digital Products</h3>
+        <p>Simple kits Melissa is making for creators and anyone mapping out the year ahead.</p>
+        <div class="prod-list">
+          <!-- Payhip product links to be added when the products go live -->
+          <div class="prod-item">
+            <strong>UGC Creator Starter System</strong>
+            <div class="prod-meta"><span class="price-tag">$19</span><span class="soon">Coming soon</span></div>
+          </div>
+          <div class="prod-item">
+            <strong>2027 Vision Board Kit</strong>
+            <div class="prod-meta"><span class="price-tag">$19</span><span class="soon">Coming soon</span></div>
+          </div>
+        </div>
+        <a class="btn cr" href="mailto:hello@hiddenlightcollective.com?subject=Digital%20products">Ask about them</a>
+      </article>
+
+      <article class="card venture f-lilac sh-pink tilt-r">
+        <span class="pill">03 · Media</span>
+        <h3>Wigglewink</h3>
+        <p>A preschool animated music video series made with AI video tools, built to feel warm, playful, and singable.</p>
+        <div class="pills"><span class="pill pk">Kids</span><span class="pill">Animation</span><span class="pill">AI video</span></div>
+      </article>
+
+      <article class="card venture sh-lilac">
+        <span class="pill lc">04 · Studio</span>
+        <h3>Poetry, music &amp; publishing</h3>
+        <p>Original poetry, music, and publishing projects from Melissa, the through-line of everything else she builds.</p>
+        <div class="pills"><span class="pill">Poetry</span><span class="pill">Music</span><span class="pill">Publishing</span></div>
+      </article>
+
+      <article class="card venture f-cobalt sh-ink tilt-l">
+        <span class="pill lm">05 · Community</span>
+        <h3>CTRL+ALT+HEAL</h3>
+        <p>A mental health and healing community. A place to feel supported, not a substitute for therapy or medical care.</p>
+        <p class="disclaimer">Supportive community, not therapy.</p>
+      </article>
+
+      <article class="card venture f-pink sh-ink tilt-r">
+        <span class="pill bk">06 · Advocacy</span>
+        <h3>Animal advocacy</h3>
+        <p>A home in the collective for animal advocacy work, stories, and causes Melissa cares about.</p>
+        <div class="pills"><span class="pill lm">Animals</span><span class="pill">Advocacy</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="bg-lilac" id="about">
+  <div class="blob" style="width:360px;height:320px;background:var(--cobalt);top:-150px;right:-140px"></div>
+  <div class="blob" style="width:200px;height:190px;background:var(--pink);bottom:-80px;left:12%"></div>
+  <svg class="spark" style="color:var(--cream);top:70px;left:40%" aria-hidden="true"><use href="#sp"/></svg>
+  <div class="wrap about-grid">
+    <div class="portrait" role="img" aria-label="Photo of Melissa coming soon">
+      <span class="sticker sk-lime"><svg aria-hidden="true"><use href="#scallop"/></svg><b>Founder</b></span>
+      <svg viewBox="0 0 120 120" class="sil" aria-hidden="true"><circle cx="60" cy="44" r="22" fill="rgba(255,246,233,.8)"/><path d="M18 116c4-30 22-44 42-44s38 14 42 44z" fill="rgba(255,246,233,.8)"/></svg>
+      <span class="phcap">Photo coming soon</span>
+    </div>
+    <div class="about-copy">
+      <span class="pill">The founder</span>
+      <h2 class="display h-lg" style="margin:16px 0 22px">About <span class="script echo-pink">Melissa</span></h2>
+      <div class="pills" style="margin-bottom:20px">
+        <span class="pill pk">Writer</span>
+        <span class="pill lm">Builder</span>
+        <span class="pill cr">Former paramedic</span>
+        <span class="pill cb">Founder</span>
+      </div>
+      <p>Melissa Miller is a former paramedic turned creative writer and builder. Years in emergency medicine, then customer service and sales, taught her to listen closely and find the right words when they matter.</p>
+      <p>She writes poetry, essays, copy, and scripts, and she builds the sites, products, and projects around them. ChatGPT, Claude, Canva, Picsart, and AI image and video tools are part of her everyday work, always finished by her own eye and voice.</p>
+      <p>Hidden Light Collective is the umbrella for all of it: the service work, the products, the stories, and the communities she is growing.</p>
+      <div class="facts">
+        <div class="card fact"><h3>Writer first</h3><p>Poetry, personal essays, copywriting, and scripts, in her own voice.</p></div>
+        <div class="card fact" style="box-shadow:5px 5px 0 var(--cobalt)"><h3>AI, then human</h3><p>She uses AI tools daily, then shapes and finishes every piece herself.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-pink contact" id="contact">
+  <div class="blob" style="width:420px;height:380px;background:var(--cobalt);bottom:-200px;right:-160px"></div>
+  <div class="blob" style="width:180px;height:170px;background:var(--lime);top:-60px;left:44%"></div>
+  <span class="sticker sk-lime"><svg aria-hidden="true"><use href="#scallop"/></svg><b>Say<br>hello</b></span>
+  <div class="wrap">
+    <h2 class="display h-xl" style="margin-bottom:24px"><span class="echo-ink">Stay in</span><br><span class="echo-cream">the light.</span></h2>
+    <p class="lede" style="margin-bottom:34px">Questions, collaborations, or a note when a product or project goes live: send an email and Melissa will write back. There isn't a signup form yet, just a real inbox.</p>
+    <div class="card">
+      <div class="row">
+        <span class="pill lm">Email</span>
+        <!-- PLACEHOLDER EMAIL: confirm or replace hello@hiddenlightcollective.com before sharing widely -->
+        <a href="mailto:hello@hiddenlightcollective.com?subject=Hello%20from%20the%20site">hello@hiddenlightcollective.com</a>
+      </div>
+      <div class="row">
+        <span class="pill pk">Hire Melissa</span>
+        <a href="https://work.hiddenlightcollective.com">work.hiddenlightcollective.com</a>
+      </div>
+      <div class="row">
+        <span class="pill lc">Newsletter</span>
+        <a href="mailto:hello@hiddenlightcollective.com?subject=Newsletter">Email to be added to the list</a>
+      </div>
+      <div class="btns" style="margin-top:22px"><a class="btn" href="mailto:hello@hiddenlightcollective.com?subject=Hello%20from%20the%20site">Email Melissa</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" aria-label="Hire Melissa">
+  <div class="glow" style="width:500px;height:500px;background:radial-gradient(circle,rgba(255,62,165,.5),transparent 62%);top:-260px;left:10%"></div>
+  <div class="glow" style="width:460px;height:460px;background:radial-gradient(circle,rgba(43,75,255,.55),transparent 62%);bottom:-260px;right:5%"></div>
+  <div class="wrap cta-inner">
+    <div>
+      <span class="pill lm">Open for projects</span>
+      <h2 class="display h-md" style="margin-top:14px">Need words, a site, or UGC? <span class="script glow-lime">Let's work.</span></h2>
+      <p>The services portfolio has packages for writing, websites, and UGC videos.</p>
+    </div>
+    <a class="btn" href="https://work.hiddenlightcollective.com">Hire me</a>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Hidden Light Collective · <span>Founded by Melissa Miller</span></footer>
+</body>
+</html>
