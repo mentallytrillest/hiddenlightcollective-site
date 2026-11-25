@@ -90,9 +90,9 @@ nav ul a:hover{color:var(--lime)}
 @media(min-width:900px){.hero-grid{grid-template-columns:1.2fr .9fr}}
 .hero .kicker{display:flex;align-items:center;gap:10px;font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
 .dot{width:10px;height:10px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px var(--lime)}
-.hero h1{margin:6px 0 10px;line-height:1}
+.hero h1{margin:6px 0 10px;line-height:1.08}
 .hello{display:block;font-family:Lobster,cursive;font-weight:400;font-size:clamp(2.2rem,6.5vw,3.8rem);color:var(--lime);text-shadow:0 0 18px rgba(198,255,61,.55);transform:rotate(-4deg);transform-origin:left;margin-bottom:-.08em;position:relative;z-index:2}
-.name{display:block;font-size:clamp(3.4rem,16vw,8.4rem);background:linear-gradient(95deg,#FF3EA5 0%,#C9A7FF 52%,#4f6bff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 22px rgba(255,62,165,.45)) drop-shadow(0 0 40px rgba(43,75,255,.35))}
+.name{display:block;font-size:clamp(1.85rem,4.6vw,3rem);background:linear-gradient(95deg,#FF3EA5 0%,#C9A7FF 52%,#4f6bff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 22px rgba(255,62,165,.45)) drop-shadow(0 0 40px rgba(43,75,255,.35))}
 .col-script{display:block;font-family:Lobster,cursive;font-weight:400;font-size:clamp(2.4rem,8vw,4.6rem);color:var(--cream);text-shadow:0 0 18px rgba(255,246,233,.35);transform:rotate(-3deg);transform-origin:left;margin-top:.06em}
 .hero p.sub{max-width:540px;font-size:1.12rem;font-weight:500;color:rgba(255,246,233,.9);margin:22px 0 6px}
 .hero p.sub em{font-family:Lobster,cursive;font-style:normal;color:var(--pink);font-size:1.25em}
@@ -111,7 +111,7 @@ nav ul a:hover{color:var(--lime)}
 .chip.c5{background:var(--cobalt);color:var(--cream);bottom:86px;left:8px;transform:rotate(-5deg);z-index:3}
 .chip.c6{background:var(--lime);bottom:16px;right:10px;transform:rotate(6deg);z-index:4}
 @media(max-width:899px){.collage{height:400px;max-width:340px}.chip{font-size:.9rem;padding:12px 14px}.chip.c2{right:4px}.chip.c4{right:8px;top:210px}.chip.c5{bottom:78px}.chip.c6{bottom:10px;right:4px}}
-section,.hero{scroll-margin-top:72px}
+section,.hero,#shop{scroll-margin-top:72px}
 .banner{background:var(--lime);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);padding:18px 0}
 .ban-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 14px}
 .ban-label{font-family:"Archivo Black",sans-serif;text-transform:uppercase;font-size:.85rem}
@@ -128,10 +128,12 @@ section,.hero{scroll-margin-top:72px}
 .prod-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .soon{font-weight:800;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;border:2px dashed var(--ink);border-radius:999px;padding:4px 10px}
 .price-tag{font-weight:800;font-size:.85rem}
-.buy{display:inline-block;font-family:"Archivo Black",sans-serif;font-weight:400;text-transform:uppercase;font-size:.72rem;letter-spacing:.06em;text-decoration:none;line-height:1;padding:6px 12px;border:2px solid var(--ink);border-radius:999px;background:var(--pink);color:var(--ink);box-shadow:3px 3px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.buy{display:inline-block;max-width:100%;font-family:"Archivo Black",sans-serif;font-weight:400;text-transform:uppercase;font-size:.72rem;letter-spacing:.04em;text-decoration:none;line-height:1.3;text-align:center;padding:8px 12px;border:2px solid var(--ink);border-radius:999px;background:var(--pink);color:var(--ink);box-shadow:3px 3px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.prod-meta .buy{flex-basis:100%;min-width:0}
 .buy:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
 .buy:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
 .note-line{font-size:.9rem;font-weight:600;margin-top:8px}
+a.note-line{display:inline-block;text-decoration:underline;text-underline-offset:3px}
 .card.f-cobalt .pill{border-color:var(--ink)}
 .card.f-cobalt .soon{border-color:var(--cream);color:var(--cream)}
 .disclaimer{font-size:.88rem;font-weight:600;margin-top:4px}
@@ -191,13 +193,10 @@ footer a:hover{color:var(--lime)}
   <div class="wrap hero-grid">
     <div>
       <p class="kicker"><span class="dot"></span>Founded by Melissa Miller</p>
-      <h1>
-        <span class="hello">Welcome to</span>
-        <span class="display name">Hidden<br>Light</span>
-        <span class="col-script">Collective</span>
-      </h1>
+      <h1 class="display name">Creative work for wellness brands, creators, and small businesses</h1>
       <p class="sub">An umbrella brand where <em>creativity</em>, mental health, and AI-powered content meet.</p>
       <div class="btns">
+        <a class="btn pk" href="#shop">Shop the $19 kits</a>
         <a class="btn" href="#ventures">See the ventures</a>
         <a class="btn ghostbtn" href="https://work.hiddenlightcollective.com">Hire me</a>
       </div>
@@ -250,7 +249,7 @@ footer a:hover{color:var(--lime)}
         <a class="btn pk" href="https://work.hiddenlightcollective.com">Hire me</a>
       </article>
 
-      <article class="card venture f-lime sh-cobalt">
+      <article class="card venture f-lime sh-cobalt" id="shop">
         <span class="pill bk">02 · Shop</span>
         <h3>Digital Products</h3>
         <p>Simple kits Melissa is making for creators and anyone mapping out the year ahead.</p>
@@ -258,11 +257,12 @@ footer a:hover{color:var(--lime)}
           <!-- UGC Creator Starter System is live on Payhip. 2027 Vision Board Kit is not live yet. -->
           <div class="prod-item">
             <strong>UGC Creator Starter System</strong>
-            <div class="prod-meta"><span class="price-tag">$19</span><a class="buy" href="https://payhip.com/b/YP315" target="_blank" rel="noopener noreferrer">Buy</a></div>
+            <div class="prod-meta"><span class="price-tag">$19</span><a class="buy" href="https://payhip.com/b/YP315" target="_blank" rel="noopener noreferrer">Get the UGC Creator Starter System ($19)</a></div>
           </div>
           <div class="prod-item">
             <strong>2027 Vision Board Kit</strong>
             <div class="prod-meta"><span class="price-tag">$19</span><span class="soon">Coming soon</span></div>
+            <a class="note-line" href="mailto:hello@hiddenlightcollective.com?subject=2027%20Vision%20Board%20Kit">Email me when it launches</a>
           </div>
         </div>
         <a class="btn cr" href="https://payhip.com/HiddenLightCollective" target="_blank" rel="noopener noreferrer">Visit the shop</a>
